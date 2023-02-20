@@ -1,7 +1,6 @@
 import 'dart:convert';
 
 import 'package:dartz/dartz.dart';
-import 'package:http/http.dart';
 import 'package:posts_app/core/strings/exception.dart';
 import 'package:posts_app/features/posts/data/models/posts_models.dart';
 import 'package:http/http.dart ' as http;
