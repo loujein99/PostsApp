@@ -71,7 +71,7 @@ class PostRemoteDataSourceImpl implements PostRemoteDataSource {
     final body = {
       "title": postModel.title,
       "body": postModel.body,
-    };
+    };     
 
     final response = await client.patch(
       Uri.parse("$BASE_URL/posts/$postId"),

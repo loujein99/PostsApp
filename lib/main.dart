@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
             theme: appTheme,
             home: Scaffold(
               appBar: AppBar(
-                title: const Text("Material App Bar"),
+                title: const Text("Posts App"),
               ),
               body: const Center(child: Text("Hello World")),
             ));
