@@ -17,7 +17,7 @@ class PostListWidget extends StatelessWidget {
         return ListTile(
           leading: Text(posts[index].id.toString()),
           title: Text(
-            posts[index].title,
+            posts[index].title.toUpperCase(),
             style: TextStyle(fontSize: 18.sp, fontWeight: FontWeight.bold),
           ),
           subtitle: Text(

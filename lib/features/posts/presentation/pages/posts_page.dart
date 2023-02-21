@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:posts_app/features/posts/presentation/pages/post_add_update_page.dart';
 import 'package:posts_app/features/posts/presentation/widgets/message_display_widget.dart';
 import '../bloc/posts_bloc/posts_bloc.dart';
 import '../widgets/loading_widget.dart';
@@ -46,12 +47,12 @@ class PostsPage extends StatelessWidget {
   Widget _buildFloatingBtn(BuildContext context) {
     return FloatingActionButton(
       onPressed: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(
-        //         builder: (_) => PostAddUpdatePage(
-        //               isUpdatePost: false,
-        //             )));
+        Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (_) => const PostAddUpdatePage(
+                      isUpdatePost: false,
+                    )));
       },
       child: const Icon(Icons.add),
     );
